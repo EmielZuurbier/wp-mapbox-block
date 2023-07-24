@@ -1,0 +1,11 @@
+{
+  "bracketSpacing": true,
+  "editorconfig": true,
+  "endOfLine": "lf",
+  "htmlWhitespaceSensitivity": "css",
+  "semi": true,
+  "singleQuote": true,
+  "tabWidth": 2,
+  "trailingComma": "none",
+  "useTabs": false
+}

@@ -1,0 +1,45 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 2,
+  "name": "tda/block-map",
+  "title": "Map",
+  "category": "theme",
+  "description": "A interactive Mapbox map that displays markers",
+  "keywords": ["map"],
+  "version": "1.0.0",
+  "textdomain": "tda-map",
+  "editorScript": "file:./index.js",
+  "script": "file:./frontend.js",
+  "style": "file:./style-index.css",
+  "supports": {
+    "color": {
+      "text": true,
+      "background": true
+    },
+    "className": true,
+    "align": true,
+    "spacing": {
+      "margin": true,
+      "padding": true
+    },
+    "__experimentalBorder": {
+      "color": false,
+      "radius": true,
+      "style": false,
+      "width": false,
+      "__experimentalDefaultControls": {
+        "color": false,
+        "radius": true,
+        "style": false,
+        "width": false
+      }
+    },
+    "multiple": false
+  },
+  "attributes": {
+    "accessToken": {
+      "type": "string",
+      "default": ""
+    }
+  }
+}

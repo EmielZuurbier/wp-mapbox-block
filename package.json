@@ -1,0 +1,40 @@
+{
+  "name": "zijper-molens",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "devDependencies": {
+    "@wordpress/api-fetch": "^6.35.0",
+    "@wordpress/block-editor": "^12.6.0",
+    "@wordpress/browserslist-config": "^5.21.0",
+    "@wordpress/components": "^25.4.0",
+    "@wordpress/core-data": "^6.15.0",
+    "@wordpress/data": "^9.8.0",
+    "@wordpress/edit-post": "^7.15.0",
+    "@wordpress/element": "^5.15.0",
+    "@wordpress/i18n": "^4.38.0",
+    "@wordpress/plugins": "^6.6.0",
+    "@wordpress/scripts": "^26.8.0"
+  },
+  "scripts": {
+    "build": "wp-scripts build",
+    "check-engines": "wp-scripts check-engines",
+    "check-licenses": "wp-scripts check-licenses",
+    "format": "wp-scripts format",
+    "lint:css": "wp-scripts lint-style",
+    "lint:js": "wp-scripts lint-js",
+    "lint:md:docs": "wp-scripts lint-md-docs",
+    "lint:pkg-json": "wp-scripts lint-pkg-json",
+    "packages-update": "wp-scripts packages-update",
+    "plugin-zip": "wp-scripts plugin-zip",
+    "start": "wp-scripts start",
+    "test:e2e": "wp-scripts test-e2e",
+    "test:unit": "wp-scripts test-unit-js",
+    "create-pot": "wp i18n make-pot ./ ./languages/tda-block-map.pot",
+    "translate": "wp i18n make-json ./languages/ --no-purge --pretty-print"
+  },
+  "dependencies": {
+    "mapbox-gl": "^2.15.0",
+    "react-map-gl": "^7.1.3"
+  }
+}
